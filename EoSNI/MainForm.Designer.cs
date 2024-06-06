@@ -72,28 +72,28 @@
             // 
             // txtCustomerName
             // 
-            txtCustomerName.Location = new Point(12, 66);
+            txtCustomerName.Location = new Point(12, 109);
             txtCustomerName.Name = "txtCustomerName";
             txtCustomerName.Size = new Size(240, 23);
             txtCustomerName.TabIndex = 0;
             // 
             // txtAddress
             // 
-            txtAddress.Location = new Point(12, 109);
+            txtAddress.Location = new Point(12, 152);
             txtAddress.Name = "txtAddress";
             txtAddress.Size = new Size(240, 23);
             txtAddress.TabIndex = 1;
             // 
             // txtPhoneNumber
             // 
-            txtPhoneNumber.Location = new Point(12, 240);
+            txtPhoneNumber.Location = new Point(12, 283);
             txtPhoneNumber.Name = "txtPhoneNumber";
             txtPhoneNumber.Size = new Size(240, 23);
             txtPhoneNumber.TabIndex = 4;
             // 
             // txtPackageType
             // 
-            txtPackageType.Location = new Point(12, 284);
+            txtPackageType.Location = new Point(12, 327);
             txtPackageType.Name = "txtPackageType";
             txtPackageType.Size = new Size(240, 23);
             txtPackageType.TabIndex = 5;
@@ -101,7 +101,7 @@
             // lblTotalWeight
             // 
             lblTotalWeight.AutoSize = true;
-            lblTotalWeight.Location = new Point(260, 398);
+            lblTotalWeight.Location = new Point(466, 353);
             lblTotalWeight.Name = "lblTotalWeight";
             lblTotalWeight.Size = new Size(100, 15);
             lblTotalWeight.TabIndex = 7;
@@ -110,7 +110,7 @@
             // lblTotalCost
             // 
             lblTotalCost.AutoSize = true;
-            lblTotalCost.Location = new Point(261, 442);
+            lblTotalCost.Location = new Point(466, 397);
             lblTotalCost.Name = "lblTotalCost";
             lblTotalCost.Size = new Size(62, 15);
             lblTotalCost.TabIndex = 8;
@@ -118,9 +118,9 @@
             // 
             // btnCalculate
             // 
-            btnCalculate.Location = new Point(582, 285);
+            btnCalculate.Location = new Point(260, 458);
             btnCalculate.Name = "btnCalculate";
-            btnCalculate.Size = new Size(108, 30);
+            btnCalculate.Size = new Size(200, 30);
             btnCalculate.TabIndex = 11;
             btnCalculate.Text = "Calculate All";
             btnCalculate.UseVisualStyleBackColor = true;
@@ -128,9 +128,9 @@
             // 
             // btnClear
             // 
-            btnClear.Location = new Point(582, 325);
+            btnClear.Location = new Point(466, 458);
             btnClear.Name = "btnClear";
-            btnClear.Size = new Size(108, 30);
+            btnClear.Size = new Size(97, 30);
             btnClear.TabIndex = 12;
             btnClear.Text = "Clear";
             btnClear.UseVisualStyleBackColor = true;
@@ -138,9 +138,9 @@
             // 
             // btnQuit
             // 
-            btnQuit.Location = new Point(582, 365);
+            btnQuit.Location = new Point(569, 458);
             btnQuit.Name = "btnQuit";
-            btnQuit.Size = new Size(108, 30);
+            btnQuit.Size = new Size(97, 30);
             btnQuit.TabIndex = 13;
             btnQuit.Text = "Quit";
             btnQuit.UseVisualStyleBackColor = true;
@@ -148,14 +148,14 @@
             // 
             // dtpDispatchDate
             // 
-            dtpDispatchDate.Location = new Point(12, 416);
+            dtpDispatchDate.Location = new Point(260, 371);
             dtpDispatchDate.Name = "dtpDispatchDate";
             dtpDispatchDate.Size = new Size(200, 23);
             dtpDispatchDate.TabIndex = 14;
             // 
             // dtpTargetDeliveryDate
             // 
-            dtpTargetDeliveryDate.Location = new Point(12, 460);
+            dtpTargetDeliveryDate.Location = new Point(260, 415);
             dtpTargetDeliveryDate.Name = "dtpTargetDeliveryDate";
             dtpTargetDeliveryDate.Size = new Size(200, 23);
             dtpTargetDeliveryDate.TabIndex = 15;
@@ -163,7 +163,7 @@
             // lblCustomerName
             // 
             lblCustomerName.AutoSize = true;
-            lblCustomerName.Location = new Point(12, 48);
+            lblCustomerName.Location = new Point(12, 91);
             lblCustomerName.Name = "lblCustomerName";
             lblCustomerName.Size = new Size(97, 15);
             lblCustomerName.TabIndex = 15;
@@ -172,7 +172,7 @@
             // lblAddress
             // 
             lblAddress.AutoSize = true;
-            lblAddress.Location = new Point(12, 91);
+            lblAddress.Location = new Point(12, 134);
             lblAddress.Name = "lblAddress";
             lblAddress.Size = new Size(52, 15);
             lblAddress.TabIndex = 16;
@@ -181,7 +181,7 @@
             // lblPhoneNumber
             // 
             lblPhoneNumber.AutoSize = true;
-            lblPhoneNumber.Location = new Point(12, 222);
+            lblPhoneNumber.Location = new Point(12, 265);
             lblPhoneNumber.Name = "lblPhoneNumber";
             lblPhoneNumber.Size = new Size(91, 15);
             lblPhoneNumber.TabIndex = 17;
@@ -190,7 +190,7 @@
             // lblPackageType
             // 
             lblPackageType.AutoSize = true;
-            lblPackageType.Location = new Point(12, 266);
+            lblPackageType.Location = new Point(12, 309);
             lblPackageType.Name = "lblPackageType";
             lblPackageType.Size = new Size(81, 15);
             lblPackageType.TabIndex = 18;
@@ -199,7 +199,7 @@
             // lblWeightPerPackage
             // 
             lblWeightPerPackage.AutoSize = true;
-            lblWeightPerPackage.Location = new Point(12, 310);
+            lblWeightPerPackage.Location = new Point(12, 353);
             lblWeightPerPackage.Name = "lblWeightPerPackage";
             lblWeightPerPackage.Size = new Size(139, 15);
             lblWeightPerPackage.TabIndex = 19;
@@ -208,7 +208,7 @@
             // lblNumberOfPackages
             // 
             lblNumberOfPackages.AutoSize = true;
-            lblNumberOfPackages.Location = new Point(12, 354);
+            lblNumberOfPackages.Location = new Point(12, 397);
             lblNumberOfPackages.Name = "lblNumberOfPackages";
             lblNumberOfPackages.Size = new Size(120, 15);
             lblNumberOfPackages.TabIndex = 20;
@@ -217,7 +217,7 @@
             // lblBaseCost
             // 
             lblBaseCost.AutoSize = true;
-            lblBaseCost.Location = new Point(527, 92);
+            lblBaseCost.Location = new Point(527, 135);
             lblBaseCost.Name = "lblBaseCost";
             lblBaseCost.Size = new Size(56, 15);
             lblBaseCost.TabIndex = 21;
@@ -226,7 +226,7 @@
             // lblDispatchDate
             // 
             lblDispatchDate.AutoSize = true;
-            lblDispatchDate.Location = new Point(12, 398);
+            lblDispatchDate.Location = new Point(260, 353);
             lblDispatchDate.Name = "lblDispatchDate";
             lblDispatchDate.Size = new Size(83, 15);
             lblDispatchDate.TabIndex = 22;
@@ -235,7 +235,7 @@
             // lblTargetDeliveryDate
             // 
             lblTargetDeliveryDate.AutoSize = true;
-            lblTargetDeliveryDate.Location = new Point(12, 442);
+            lblTargetDeliveryDate.Location = new Point(260, 397);
             lblTargetDeliveryDate.Name = "lblTargetDeliveryDate";
             lblTargetDeliveryDate.Size = new Size(114, 15);
             lblTargetDeliveryDate.TabIndex = 23;
@@ -244,7 +244,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(527, 48);
+            label1.Location = new Point(527, 91);
             label1.Name = "label1";
             label1.Size = new Size(29, 15);
             label1.TabIndex = 25;
@@ -253,7 +253,7 @@
             // numWeightPerPackage
             // 
             numWeightPerPackage.DecimalPlaces = 3;
-            numWeightPerPackage.Location = new Point(12, 328);
+            numWeightPerPackage.Location = new Point(12, 371);
             numWeightPerPackage.Maximum = new decimal(new int[] { 100000, 0, 0, 0 });
             numWeightPerPackage.Name = "numWeightPerPackage";
             numWeightPerPackage.Size = new Size(240, 23);
@@ -262,7 +262,7 @@
             // 
             // numNumberOfPackages
             // 
-            numNumberOfPackages.Location = new Point(12, 372);
+            numNumberOfPackages.Location = new Point(12, 415);
             numNumberOfPackages.Maximum = new decimal(new int[] { 1000, 0, 0, 0 });
             numNumberOfPackages.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
             numNumberOfPackages.Name = "numNumberOfPackages";
@@ -274,7 +274,7 @@
             // numBaseCost
             // 
             numBaseCost.DecimalPlaces = 2;
-            numBaseCost.Location = new Point(527, 110);
+            numBaseCost.Location = new Point(527, 153);
             numBaseCost.Maximum = new decimal(new int[] { 1000, 0, 0, 0 });
             numBaseCost.Name = "numBaseCost";
             numBaseCost.Size = new Size(136, 23);
@@ -286,7 +286,7 @@
             // numCostPerKg
             // 
             numCostPerKg.DecimalPlaces = 2;
-            numCostPerKg.Location = new Point(527, 154);
+            numCostPerKg.Location = new Point(527, 197);
             numCostPerKg.Maximum = new decimal(new int[] { 1000, 0, 0, 0 });
             numCostPerKg.Name = "numCostPerKg";
             numCostPerKg.Size = new Size(136, 23);
@@ -298,7 +298,7 @@
             // lblCostPerKg
             // 
             lblCostPerKg.AutoSize = true;
-            lblCostPerKg.Location = new Point(528, 136);
+            lblCostPerKg.Location = new Point(528, 179);
             lblCostPerKg.Name = "lblCostPerKg";
             lblCostPerKg.Size = new Size(55, 15);
             lblCostPerKg.TabIndex = 31;
@@ -307,7 +307,7 @@
             // numTotalWeight
             // 
             numTotalWeight.DecimalPlaces = 2;
-            numTotalWeight.Location = new Point(260, 416);
+            numTotalWeight.Location = new Point(466, 371);
             numTotalWeight.Maximum = new decimal(new int[] { 1000, 0, 0, 0 });
             numTotalWeight.Name = "numTotalWeight";
             numTotalWeight.ReadOnly = true;
@@ -318,7 +318,7 @@
             // numTotalCost
             // 
             numTotalCost.DecimalPlaces = 2;
-            numTotalCost.Location = new Point(261, 460);
+            numTotalCost.Location = new Point(466, 415);
             numTotalCost.Maximum = new decimal(new int[] { 1000, 0, 0, 0 });
             numTotalCost.Name = "numTotalCost";
             numTotalCost.ReadOnly = true;
@@ -329,7 +329,7 @@
             // lblCity
             // 
             lblCity.AutoSize = true;
-            lblCity.Location = new Point(12, 135);
+            lblCity.Location = new Point(12, 178);
             lblCity.Name = "lblCity";
             lblCity.Size = new Size(31, 15);
             lblCity.TabIndex = 33;
@@ -337,7 +337,7 @@
             // 
             // txtCity
             // 
-            txtCity.Location = new Point(12, 153);
+            txtCity.Location = new Point(12, 196);
             txtCity.Name = "txtCity";
             txtCity.Size = new Size(240, 23);
             txtCity.TabIndex = 2;
@@ -345,7 +345,7 @@
             // lblPostCode
             // 
             lblPostCode.AutoSize = true;
-            lblPostCode.Location = new Point(12, 179);
+            lblPostCode.Location = new Point(12, 222);
             lblPostCode.Name = "lblPostCode";
             lblPostCode.Size = new Size(62, 15);
             lblPostCode.TabIndex = 35;
@@ -353,14 +353,14 @@
             // 
             // txtPostCode
             // 
-            txtPostCode.Location = new Point(12, 197);
+            txtPostCode.Location = new Point(12, 240);
             txtPostCode.Name = "txtPostCode";
             txtPostCode.Size = new Size(240, 23);
             txtPostCode.TabIndex = 3;
             // 
             // numVAT
             // 
-            numVAT.Location = new Point(527, 66);
+            numVAT.Location = new Point(527, 109);
             numVAT.Maximum = new decimal(new int[] { 1000, 0, 0, 0 });
             numVAT.Name = "numVAT";
             numVAT.Size = new Size(136, 23);
