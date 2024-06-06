@@ -14,6 +14,8 @@
             txtPassword = new TextBox();
             btnLogin = new Button();
             pictureBoxLogo = new PictureBox();
+            lblUsername = new Label();
+            lblPassword = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBoxLogo).BeginInit();
             SuspendLayout();
             // 
@@ -44,17 +46,38 @@
             // 
             // pictureBoxLogo
             // 
-            pictureBoxLogo.Location = new Point(100, 20);
+            pictureBoxLogo.Image = Properties.Resources.eos_ni_high_resolution_logo_transparent;
+            pictureBoxLogo.Location = new Point(100, 56);
             pictureBoxLogo.Name = "pictureBoxLogo";
-            pictureBoxLogo.Size = new Size(200, 100);
+            pictureBoxLogo.Size = new Size(200, 50);
             pictureBoxLogo.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBoxLogo.TabIndex = 3;
             pictureBoxLogo.TabStop = false;
+            // 
+            // lblUsername
+            // 
+            lblUsername.AutoSize = true;
+            lblUsername.Location = new Point(100, 132);
+            lblUsername.Name = "lblUsername";
+            lblUsername.Size = new Size(63, 15);
+            lblUsername.TabIndex = 16;
+            lblUsername.Text = "Username:";
+            // 
+            // lblPassword
+            // 
+            lblPassword.AutoSize = true;
+            lblPassword.Location = new Point(100, 182);
+            lblPassword.Name = "lblPassword";
+            lblPassword.Size = new Size(60, 15);
+            lblPassword.TabIndex = 17;
+            lblPassword.Text = "Password:";
             // 
             // LoginForm
             // 
             AcceptButton = btnLogin;
             ClientSize = new Size(400, 350);
+            Controls.Add(lblPassword);
+            Controls.Add(lblUsername);
             Controls.Add(pictureBoxLogo);
             Controls.Add(btnLogin);
             Controls.Add(txtPassword);
@@ -65,5 +88,8 @@
             ResumeLayout(false);
             PerformLayout();
         }
+
+        private Label lblUsername;
+        private Label lblPassword;
     }
 }

@@ -59,6 +59,7 @@
             lblPostCode = new Label();
             txtPostCode = new TextBox();
             numVAT = new NumericUpDown();
+            pictureBoxLogo = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)numWeightPerPackage).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numNumberOfPackages).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numBaseCost).BeginInit();
@@ -66,6 +67,7 @@
             ((System.ComponentModel.ISupportInitialize)numTotalWeight).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numTotalCost).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numVAT).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxLogo).BeginInit();
             SuspendLayout();
             // 
             // txtCustomerName
@@ -99,7 +101,7 @@
             // lblTotalWeight
             // 
             lblTotalWeight.AutoSize = true;
-            lblTotalWeight.Location = new Point(263, 398);
+            lblTotalWeight.Location = new Point(260, 398);
             lblTotalWeight.Name = "lblTotalWeight";
             lblTotalWeight.Size = new Size(100, 15);
             lblTotalWeight.TabIndex = 7;
@@ -108,7 +110,7 @@
             // lblTotalCost
             // 
             lblTotalCost.AutoSize = true;
-            lblTotalCost.Location = new Point(264, 442);
+            lblTotalCost.Location = new Point(261, 442);
             lblTotalCost.Name = "lblTotalCost";
             lblTotalCost.Size = new Size(62, 15);
             lblTotalCost.TabIndex = 8;
@@ -305,7 +307,7 @@
             // numTotalWeight
             // 
             numTotalWeight.DecimalPlaces = 2;
-            numTotalWeight.Location = new Point(263, 416);
+            numTotalWeight.Location = new Point(260, 416);
             numTotalWeight.Maximum = new decimal(new int[] { 1000, 0, 0, 0 });
             numTotalWeight.Name = "numTotalWeight";
             numTotalWeight.ReadOnly = true;
@@ -316,7 +318,7 @@
             // numTotalCost
             // 
             numTotalCost.DecimalPlaces = 2;
-            numTotalCost.Location = new Point(264, 460);
+            numTotalCost.Location = new Point(261, 460);
             numTotalCost.Maximum = new decimal(new int[] { 1000, 0, 0, 0 });
             numTotalCost.Name = "numTotalCost";
             numTotalCost.ReadOnly = true;
@@ -366,9 +368,20 @@
             numVAT.Value = new decimal(new int[] { 20, 0, 0, 0 });
             numVAT.ValueChanged += numericUpDown1_ValueChanged;
             // 
+            // pictureBoxLogo
+            // 
+            pictureBoxLogo.Image = Properties.Resources.eos_ni_high_resolution_logo_transparent;
+            pictureBoxLogo.Location = new Point(260, 12);
+            pictureBoxLogo.Name = "pictureBoxLogo";
+            pictureBoxLogo.Size = new Size(200, 50);
+            pictureBoxLogo.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBoxLogo.TabIndex = 36;
+            pictureBoxLogo.TabStop = false;
+            // 
             // MainForm
             // 
             ClientSize = new Size(702, 500);
+            Controls.Add(pictureBoxLogo);
             Controls.Add(numVAT);
             Controls.Add(lblPostCode);
             Controls.Add(txtPostCode);
@@ -411,6 +424,7 @@
             ((System.ComponentModel.ISupportInitialize)numTotalWeight).EndInit();
             ((System.ComponentModel.ISupportInitialize)numTotalCost).EndInit();
             ((System.ComponentModel.ISupportInitialize)numVAT).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxLogo).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -428,5 +442,6 @@
         private Label lblPostCode;
         private TextBox txtPostCode;
         private NumericUpDown numVAT;
+        private PictureBox pictureBoxLogo;
     }
 }

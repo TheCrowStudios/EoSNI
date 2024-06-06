@@ -62,7 +62,7 @@ namespace EoSNI
         public double CalculateCost()
         {
             double price = ((double)numBaseCost.Value + (double)numCostPerKg.Value * (double)numTotalWeight.Value);
-            double totalCost =  price + price * (double)numVAT.Value / 100;
+            double totalCost = price + price * (double)numVAT.Value / 100;
             return totalCost;
         }
 
