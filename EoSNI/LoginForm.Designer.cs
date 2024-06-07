@@ -16,6 +16,8 @@
             pictureBoxLogo = new PictureBox();
             lblUsername = new Label();
             lblPassword = new Label();
+            btnHelp = new Button();
+            btnQuit = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBoxLogo).BeginInit();
             SuspendLayout();
             // 
@@ -36,7 +38,7 @@
             // 
             // btnLogin
             // 
-            btnLogin.Location = new Point(150, 250);
+            btnLogin.Location = new Point(150, 242);
             btnLogin.Name = "btnLogin";
             btnLogin.Size = new Size(100, 30);
             btnLogin.TabIndex = 2;
@@ -72,10 +74,32 @@
             lblPassword.TabIndex = 17;
             lblPassword.Text = "Password:";
             // 
+            // btnHelp
+            // 
+            btnHelp.Location = new Point(150, 278);
+            btnHelp.Name = "btnHelp";
+            btnHelp.Size = new Size(100, 30);
+            btnHelp.TabIndex = 18;
+            btnHelp.Text = "Help";
+            btnHelp.UseVisualStyleBackColor = true;
+            btnHelp.Click += btnHelp_Click;
+            // 
+            // btnQuit
+            // 
+            btnQuit.Location = new Point(150, 314);
+            btnQuit.Name = "btnQuit";
+            btnQuit.Size = new Size(97, 30);
+            btnQuit.TabIndex = 19;
+            btnQuit.Text = "Quit";
+            btnQuit.UseVisualStyleBackColor = true;
+            btnQuit.Click += btnQuit_Click;
+            // 
             // LoginForm
             // 
             AcceptButton = btnLogin;
             ClientSize = new Size(400, 350);
+            Controls.Add(btnQuit);
+            Controls.Add(btnHelp);
             Controls.Add(lblPassword);
             Controls.Add(lblUsername);
             Controls.Add(pictureBoxLogo);
@@ -91,5 +115,7 @@
 
         private Label lblUsername;
         private Label lblPassword;
+        private Button btnHelp;
+        private Button btnQuit;
     }
 }

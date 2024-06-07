@@ -26,5 +26,16 @@ namespace EoSNI
                 MessageBox.Show("Invalid credentials, please try again.");
             }
         }
+
+        private void btnHelp_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Username: admin\n" +
+                "Passsword: password");
+        }
+
+        private void btnQuit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
