@@ -419,6 +419,7 @@
             Controls.Add(txtCustomerName);
             Name = "MainForm";
             Text = "EoS NI - Add delivery";
+            Load += MainForm_Load;
             ((System.ComponentModel.ISupportInitialize)numWeightPerPackage).EndInit();
             ((System.ComponentModel.ISupportInitialize)numNumberOfPackages).EndInit();
             ((System.ComponentModel.ISupportInitialize)numBaseCost).EndInit();

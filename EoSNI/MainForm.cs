@@ -120,5 +120,11 @@ namespace EoSNI
         {
             numTotalCost.Text = Convert.ToString(CalculateCost());
         }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+            dtpDispatchDate.Value = DateTime.Now.AddDays(1);
+            dtpTargetDeliveryDate.Value = DateTime.Now.AddDays(4);
+        }
     }
 }
