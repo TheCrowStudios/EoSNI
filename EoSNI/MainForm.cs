@@ -110,16 +110,19 @@ namespace EoSNI
         private void numBaseCost_ValueChanged(object sender, EventArgs e)
         {
             numTotalCost.Text = Convert.ToString(CalculateCost());
+            btnResetBaseCost.Visible = true;
         }
 
         private void numCostPerKg_ValueChanged(object sender, EventArgs e)
         {
             numTotalCost.Text = Convert.ToString(CalculateCost());
+            btnResetCostPerKg.Visible = true;
         }
 
         private void numericUpDown1_ValueChanged(object sender, EventArgs e)
         {
             numTotalCost.Text = Convert.ToString(CalculateCost());
+            btnResetVAT.Visible = true;
         }
 
         private void MainForm_Load(object sender, EventArgs e)
@@ -127,6 +130,24 @@ namespace EoSNI
             dtpDispatchDate.Value = DateTime.Now.AddDays(1);
             dtpTargetDeliveryDate.Value = DateTime.Now.AddDays(4);
             cmbDeliveryType.SelectedIndex = 0;
+        }
+
+        private void btnResetVAT_Click(object sender, EventArgs e)
+        {
+            numVAT.Value = 20;
+            btnResetVAT.Visible = false;
+        }
+
+        private void btnResetBaseCost_Click(object sender, EventArgs e)
+        {
+            numBaseCost.Value = 1;
+            btnResetBaseCost.Visible = false;
+        }
+
+        private void btnResetCostPerKg_Click(object sender, EventArgs e)
+        {
+            numCostPerKg.Value = 1;
+            btnResetCostPerKg.Visible = false;
         }
     }
 }

@@ -25,6 +25,7 @@
 
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             txtCustomerName = new TextBox();
             txtAddress = new TextBox();
             txtPhoneNumber = new TextBox();
@@ -61,6 +62,9 @@
             txtPackageType = new TextBox();
             cmbDeliveryType = new ComboBox();
             label2 = new Label();
+            btnResetVAT = new Button();
+            btnResetBaseCost = new Button();
+            btnResetCostPerKg = new Button();
             ((System.ComponentModel.ISupportInitialize)numWeightPerPackage).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numNumberOfPackages).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numBaseCost).BeginInit();
@@ -400,9 +404,51 @@
             label2.TabIndex = 39;
             label2.Text = "Package Type:";
             // 
+            // btnResetVAT
+            // 
+            btnResetVAT.FlatAppearance.BorderSize = 0;
+            btnResetVAT.FlatStyle = FlatStyle.Flat;
+            btnResetVAT.Image = (Image)resources.GetObject("btnResetVAT.Image");
+            btnResetVAT.Location = new Point(669, 109);
+            btnResetVAT.Name = "btnResetVAT";
+            btnResetVAT.Size = new Size(21, 23);
+            btnResetVAT.TabIndex = 40;
+            btnResetVAT.UseVisualStyleBackColor = true;
+            btnResetVAT.Visible = false;
+            btnResetVAT.Click += btnResetVAT_Click;
+            // 
+            // btnResetBaseCost
+            // 
+            btnResetBaseCost.FlatAppearance.BorderSize = 0;
+            btnResetBaseCost.FlatStyle = FlatStyle.Flat;
+            btnResetBaseCost.Image = (Image)resources.GetObject("btnResetBaseCost.Image");
+            btnResetBaseCost.Location = new Point(669, 153);
+            btnResetBaseCost.Name = "btnResetBaseCost";
+            btnResetBaseCost.Size = new Size(21, 23);
+            btnResetBaseCost.TabIndex = 41;
+            btnResetBaseCost.UseVisualStyleBackColor = true;
+            btnResetBaseCost.Visible = false;
+            btnResetBaseCost.Click += btnResetBaseCost_Click;
+            // 
+            // btnResetCostPerKg
+            // 
+            btnResetCostPerKg.FlatAppearance.BorderSize = 0;
+            btnResetCostPerKg.FlatStyle = FlatStyle.Flat;
+            btnResetCostPerKg.Image = (Image)resources.GetObject("btnResetCostPerKg.Image");
+            btnResetCostPerKg.Location = new Point(669, 196);
+            btnResetCostPerKg.Name = "btnResetCostPerKg";
+            btnResetCostPerKg.Size = new Size(21, 23);
+            btnResetCostPerKg.TabIndex = 42;
+            btnResetCostPerKg.UseVisualStyleBackColor = true;
+            btnResetCostPerKg.Visible = false;
+            btnResetCostPerKg.Click += btnResetCostPerKg_Click;
+            // 
             // MainForm
             // 
             ClientSize = new Size(702, 500);
+            Controls.Add(btnResetCostPerKg);
+            Controls.Add(btnResetBaseCost);
+            Controls.Add(btnResetVAT);
             Controls.Add(label2);
             Controls.Add(cmbDeliveryType);
             Controls.Add(pictureBoxLogo);
@@ -471,5 +517,8 @@
         private TextBox txtPackageType;
         private ComboBox cmbDeliveryType;
         private Label label2;
+        private Button btnResetVAT;
+        private Button btnResetBaseCost;
+        private Button btnResetCostPerKg;
     }
 }
