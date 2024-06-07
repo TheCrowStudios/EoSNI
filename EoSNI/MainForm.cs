@@ -12,6 +12,8 @@ namespace EoSNI
             InitializeComponent();
             NumberFormatInfo nfi = CultureInfo.CurrentCulture.NumberFormat;
             CurrencySymbol = nfi.CurrencySymbol;
+            numTotalWeight.Text = Convert.ToString(CalculateWeight());
+            numTotalCost.Text = Convert.ToString(CalculateCost());
         }
 
         private void btnCalculateCost_Click(object sender, EventArgs e)
@@ -39,6 +41,8 @@ namespace EoSNI
         private void btnQuit_Click(object sender, EventArgs e)
         {
             Application.Exit();
+            numTotalWeight.Text = Convert.ToString(CalculateWeight());
+            numTotalCost.Text = Convert.ToString(CalculateCost());
         }
 
         private void numWeightPerPackage_ValueChanged(object sender, EventArgs e)
