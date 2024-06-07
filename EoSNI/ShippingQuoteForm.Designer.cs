@@ -35,10 +35,10 @@
             // lblQuote
             // 
             lblQuote.AutoSize = true;
-            lblQuote.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblQuote.Font = new Font("Courier New", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblQuote.Location = new Point(48, 45);
             lblQuote.Name = "lblQuote";
-            lblQuote.Size = new Size(68, 20);
+            lblQuote.Size = new Size(71, 17);
             lblQuote.TabIndex = 0;
             lblQuote.Text = "<quote>";
             // 

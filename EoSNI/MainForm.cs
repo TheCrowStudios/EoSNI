@@ -20,20 +20,45 @@ namespace EoSNI
         {
             double cost = CalculateCost();
             double vat = cost / 1.2 * (double)numVAT.Value / 100;
-            new ShippingQuoteForm($"Customer name: {txtCustomerName.Text}\n" +
-                $"Address: {txtAddress.Text}\n" +
-                $"Post code: {txtPostCode.Text}\n" +
-                $"Phone number: {txtPhoneNumber.Text}\n" +
-                $"Package type: {txtPackageType.Text}\n" +
-                $"Number of packages: {numNumberOfPackages.Value}\n" +
-                $"Total weight: {CalculateWeight()}kg\n" +
-                $"Dispatch date: {dtpDispatchDate.Value}\n" +
-                $"Target delivery date: {dtpTargetDeliveryDate.Value}\n" +
-                $"Base price: {numBaseCost.Value.ToString("C")}\n" +
-                $"Cost/kg: {numCostPerKg.Value.ToString("C")}\n" +
-                $"Total: {(cost - vat).ToString("C")}\n" +
-                $"VAT: {vat.ToString("C")} (%{numVAT.Value})\n\n" +
-                $"TOTAL: {cost.ToString("C")}").ShowDialog();
+            string[] quoteStrings = {$"Customer name: {txtCustomerName.Text}\n",
+                $"Address: {txtAddress.Text}\n",
+                $"Post code: {txtPostCode.Text}\n",
+                $"Phone number: {txtPhoneNumber.Text}\n",
+                $"Package type: {txtPackageType.Text}\n",
+                $"Number of packages: {numNumberOfPackages.Value}\n",
+                $"Total weight: {CalculateWeight()}kg\n",
+                $"Dispatch date: {dtpDispatchDate.Value}\n",
+                $"Target delivery date: {dtpTargetDeliveryDate.Value}\n",
+                $"Base price: {numBaseCost.Value.ToString("C")}\n",
+                $"Cost/kg: {numCostPerKg.Value.ToString("C")}\n",
+                $"Total: {(cost - vat).ToString("C")}\n",
+                $"VAT: {vat.ToString("C")} (%{numVAT.Value})\n\n",
+                $"TOTAL: {cost.ToString("C")}"};
+
+            int maxLength = 0;
+
+            for (int i = 0; i < quoteStrings.Length; i++)
+            {
+                if (quoteStrings[i].Replace("\n", "").Length > maxLength) maxLength = quoteStrings[i].Length;
+            }
+
+            for (int i = 0; i < quoteStrings.Length; i++)
+            {
+                string[] strings = quoteStrings[i].Split(": ");
+                strings[0] += ":";
+                strings[0] = strings[0].PadRight(maxLength - strings[1].Replace("\n", "").Length);
+                strings[0] += strings[1];
+                quoteStrings[i] = strings[0];
+            }
+
+            string quote = "";
+
+            for (int i = 0; i < quoteStrings.Length; i++)
+            {
+                quote += quoteStrings[i];
+            }
+
+            new ShippingQuoteForm(quote).ShowDialog();
         }
 
         private void btnClear_Click(object sender, EventArgs e)
