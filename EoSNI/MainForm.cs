@@ -18,7 +18,7 @@ namespace EoSNI
         {
             double cost = CalculateCost();
             double vat = cost / 1.2 * (double)numVAT.Value / 100;
-            MessageBox.Show($"Number of packages: {numNumberOfPackages.Value}\nTotal weight: {CalculateWeight()}kg\nBase price: {numBaseCost.Value.ToString("C")}\nCost/kg; {numCostPerKg.Value.ToString("C")}\nVAT: {vat.ToString("C")} (%{numVAT.Value})\n\nTOTAL: {cost.ToString("C")}");
+            new ShippingQuoteForm($"Number of packages: {numNumberOfPackages.Value}\nTotal weight: {CalculateWeight()}kg\nBase price: {numBaseCost.Value.ToString("C")}\nCost/kg; {numCostPerKg.Value.ToString("C")}\nVAT: {vat.ToString("C")} (%{numVAT.Value})\n\nTOTAL: {cost.ToString("C")}").ShowDialog();
         }
 
         private void btnClear_Click(object sender, EventArgs e)
