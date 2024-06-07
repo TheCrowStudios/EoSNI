@@ -122,7 +122,7 @@
             btnCalculate.Name = "btnCalculate";
             btnCalculate.Size = new Size(200, 30);
             btnCalculate.TabIndex = 13;
-            btnCalculate.Text = "Calculate All";
+            btnCalculate.Text = "Show shipping details";
             btnCalculate.UseVisualStyleBackColor = true;
             btnCalculate.Click += btnCalculateCost_Click;
             // 
