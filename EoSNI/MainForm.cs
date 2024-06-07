@@ -41,8 +41,6 @@ namespace EoSNI
         private void btnQuit_Click(object sender, EventArgs e)
         {
             Application.Exit();
-            numTotalWeight.Text = Convert.ToString(CalculateWeight());
-            numTotalCost.Text = Convert.ToString(CalculateCost());
         }
 
         private void numWeightPerPackage_ValueChanged(object sender, EventArgs e)
