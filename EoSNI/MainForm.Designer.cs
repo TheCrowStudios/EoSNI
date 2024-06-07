@@ -121,7 +121,7 @@
             btnCalculate.Location = new Point(260, 458);
             btnCalculate.Name = "btnCalculate";
             btnCalculate.Size = new Size(200, 30);
-            btnCalculate.TabIndex = 11;
+            btnCalculate.TabIndex = 13;
             btnCalculate.Text = "Calculate All";
             btnCalculate.UseVisualStyleBackColor = true;
             btnCalculate.Click += btnCalculateCost_Click;
@@ -131,7 +131,7 @@
             btnClear.Location = new Point(466, 458);
             btnClear.Name = "btnClear";
             btnClear.Size = new Size(97, 30);
-            btnClear.TabIndex = 12;
+            btnClear.TabIndex = 14;
             btnClear.Text = "Clear";
             btnClear.UseVisualStyleBackColor = true;
             btnClear.Click += btnClear_Click;
@@ -141,7 +141,7 @@
             btnQuit.Location = new Point(569, 458);
             btnQuit.Name = "btnQuit";
             btnQuit.Size = new Size(97, 30);
-            btnQuit.TabIndex = 13;
+            btnQuit.TabIndex = 15;
             btnQuit.Text = "Quit";
             btnQuit.UseVisualStyleBackColor = true;
             btnQuit.Click += btnQuit_Click;
@@ -151,14 +151,14 @@
             dtpDispatchDate.Location = new Point(260, 371);
             dtpDispatchDate.Name = "dtpDispatchDate";
             dtpDispatchDate.Size = new Size(200, 23);
-            dtpDispatchDate.TabIndex = 14;
+            dtpDispatchDate.TabIndex = 8;
             // 
             // dtpTargetDeliveryDate
             // 
             dtpTargetDeliveryDate.Location = new Point(260, 415);
             dtpTargetDeliveryDate.Name = "dtpTargetDeliveryDate";
             dtpTargetDeliveryDate.Size = new Size(200, 23);
-            dtpTargetDeliveryDate.TabIndex = 15;
+            dtpTargetDeliveryDate.TabIndex = 9;
             // 
             // lblCustomerName
             // 
@@ -278,7 +278,7 @@
             numBaseCost.Maximum = new decimal(new int[] { 1000, 0, 0, 0 });
             numBaseCost.Name = "numBaseCost";
             numBaseCost.Size = new Size(136, 23);
-            numBaseCost.TabIndex = 9;
+            numBaseCost.TabIndex = 11;
             numBaseCost.ThousandsSeparator = true;
             numBaseCost.Value = new decimal(new int[] { 1, 0, 0, 0 });
             numBaseCost.ValueChanged += numBaseCost_ValueChanged;
@@ -290,7 +290,7 @@
             numCostPerKg.Maximum = new decimal(new int[] { 1000, 0, 0, 0 });
             numCostPerKg.Name = "numCostPerKg";
             numCostPerKg.Size = new Size(136, 23);
-            numCostPerKg.TabIndex = 10;
+            numCostPerKg.TabIndex = 12;
             numCostPerKg.ThousandsSeparator = true;
             numCostPerKg.Value = new decimal(new int[] { 1, 0, 0, 0 });
             numCostPerKg.ValueChanged += numCostPerKg_ValueChanged;
@@ -313,6 +313,7 @@
             numTotalWeight.ReadOnly = true;
             numTotalWeight.Size = new Size(200, 23);
             numTotalWeight.TabIndex = 6;
+            numTotalWeight.TabStop = false;
             numTotalWeight.ThousandsSeparator = true;
             // 
             // numTotalCost
@@ -324,6 +325,7 @@
             numTotalCost.ReadOnly = true;
             numTotalCost.Size = new Size(200, 23);
             numTotalCost.TabIndex = 7;
+            numTotalCost.TabStop = false;
             numTotalCost.ThousandsSeparator = true;
             // 
             // lblCity
@@ -364,7 +366,7 @@
             numVAT.Maximum = new decimal(new int[] { 1000, 0, 0, 0 });
             numVAT.Name = "numVAT";
             numVAT.Size = new Size(136, 23);
-            numVAT.TabIndex = 8;
+            numVAT.TabIndex = 10;
             numVAT.Value = new decimal(new int[] { 20, 0, 0, 0 });
             numVAT.ValueChanged += numericUpDown1_ValueChanged;
             // 
