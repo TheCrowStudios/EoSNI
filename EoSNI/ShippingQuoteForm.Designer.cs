@@ -36,7 +36,7 @@
             // 
             lblQuote.AutoSize = true;
             lblQuote.Font = new Font("Courier New", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblQuote.Location = new Point(48, 45);
+            lblQuote.Location = new Point(12, 48);
             lblQuote.Name = "lblQuote";
             lblQuote.Size = new Size(71, 17);
             lblQuote.TabIndex = 0;
