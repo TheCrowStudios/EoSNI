@@ -78,6 +78,7 @@
             // txtCustomerName
             // 
             txtCustomerName.Location = new Point(12, 109);
+            txtCustomerName.MaxLength = 64;
             txtCustomerName.Name = "txtCustomerName";
             txtCustomerName.Size = new Size(240, 23);
             txtCustomerName.TabIndex = 0;
@@ -85,6 +86,7 @@
             // txtAddress
             // 
             txtAddress.Location = new Point(12, 152);
+            txtAddress.MaxLength = 64;
             txtAddress.Name = "txtAddress";
             txtAddress.Size = new Size(240, 23);
             txtAddress.TabIndex = 1;
@@ -92,6 +94,7 @@
             // txtPhoneNumber
             // 
             txtPhoneNumber.Location = new Point(12, 283);
+            txtPhoneNumber.MaxLength = 16;
             txtPhoneNumber.Name = "txtPhoneNumber";
             txtPhoneNumber.Size = new Size(240, 23);
             txtPhoneNumber.TabIndex = 4;
@@ -338,6 +341,7 @@
             // txtCity
             // 
             txtCity.Location = new Point(12, 196);
+            txtCity.MaxLength = 64;
             txtCity.Name = "txtCity";
             txtCity.Size = new Size(240, 23);
             txtCity.TabIndex = 2;
@@ -354,6 +358,7 @@
             // txtPostCode
             // 
             txtPostCode.Location = new Point(12, 240);
+            txtPostCode.MaxLength = 10;
             txtPostCode.Name = "txtPostCode";
             txtPostCode.Size = new Size(240, 23);
             txtPostCode.TabIndex = 3;
@@ -381,6 +386,7 @@
             // txtPackageType
             // 
             txtPackageType.Location = new Point(12, 327);
+            txtPackageType.MaxLength = 32;
             txtPackageType.Name = "txtPackageType";
             txtPackageType.Size = new Size(240, 23);
             txtPackageType.TabIndex = 5;
