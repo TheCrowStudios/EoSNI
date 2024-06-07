@@ -27,6 +27,7 @@ namespace EoSNI
                 $"Package type: {txtPackageType.Text}\n",
                 $"Number of packages: {numNumberOfPackages.Value}\n",
                 $"Total weight: {CalculateWeight()}kg\n",
+                $"Delivery type: {cmbDeliveryType.Text}\n",
                 $"Dispatch date: {dtpDispatchDate.Value}\n",
                 $"Target delivery date: {dtpTargetDeliveryDate.Value}\n",
                 $"Base price: {numBaseCost.Value.ToString("C")}\n",
@@ -125,6 +126,7 @@ namespace EoSNI
         {
             dtpDispatchDate.Value = DateTime.Now.AddDays(1);
             dtpTargetDeliveryDate.Value = DateTime.Now.AddDays(4);
+            cmbDeliveryType.SelectedIndex = 0;
         }
     }
 }

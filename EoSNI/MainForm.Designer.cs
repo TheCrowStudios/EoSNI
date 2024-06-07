@@ -6,7 +6,6 @@
         private System.Windows.Forms.TextBox txtCustomerName;
         private System.Windows.Forms.TextBox txtAddress;
         private System.Windows.Forms.TextBox txtPhoneNumber;
-        private System.Windows.Forms.TextBox txtPackageType;
         private System.Windows.Forms.Label lblTotalWeight;
         private System.Windows.Forms.Label lblTotalCost;
         private System.Windows.Forms.Button btnCalculate;
@@ -29,7 +28,6 @@
             txtCustomerName = new TextBox();
             txtAddress = new TextBox();
             txtPhoneNumber = new TextBox();
-            txtPackageType = new TextBox();
             lblTotalWeight = new Label();
             lblTotalCost = new Label();
             btnCalculate = new Button();
@@ -60,6 +58,9 @@
             txtPostCode = new TextBox();
             numVAT = new NumericUpDown();
             pictureBoxLogo = new PictureBox();
+            txtPackageType = new TextBox();
+            cmbDeliveryType = new ComboBox();
+            label2 = new Label();
             ((System.ComponentModel.ISupportInitialize)numWeightPerPackage).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numNumberOfPackages).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numBaseCost).BeginInit();
@@ -90,13 +91,6 @@
             txtPhoneNumber.Name = "txtPhoneNumber";
             txtPhoneNumber.Size = new Size(240, 23);
             txtPhoneNumber.TabIndex = 4;
-            // 
-            // txtPackageType
-            // 
-            txtPackageType.Location = new Point(12, 327);
-            txtPackageType.Name = "txtPackageType";
-            txtPackageType.Size = new Size(240, 23);
-            txtPackageType.TabIndex = 5;
             // 
             // lblTotalWeight
             // 
@@ -380,9 +374,37 @@
             pictureBoxLogo.TabIndex = 36;
             pictureBoxLogo.TabStop = false;
             // 
+            // txtPackageType
+            // 
+            txtPackageType.Location = new Point(12, 327);
+            txtPackageType.Name = "txtPackageType";
+            txtPackageType.Size = new Size(240, 23);
+            txtPackageType.TabIndex = 5;
+            // 
+            // cmbDeliveryType
+            // 
+            cmbDeliveryType.DropDownStyle = ComboBoxStyle.DropDownList;
+            cmbDeliveryType.FormattingEnabled = true;
+            cmbDeliveryType.Items.AddRange(new object[] { "FCL", "LCL", "pallet", "small package" });
+            cmbDeliveryType.Location = new Point(12, 458);
+            cmbDeliveryType.Name = "cmbDeliveryType";
+            cmbDeliveryType.Size = new Size(240, 23);
+            cmbDeliveryType.TabIndex = 38;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(12, 441);
+            label2.Name = "label2";
+            label2.Size = new Size(81, 15);
+            label2.TabIndex = 39;
+            label2.Text = "Package Type:";
+            // 
             // MainForm
             // 
             ClientSize = new Size(702, 500);
+            Controls.Add(label2);
+            Controls.Add(cmbDeliveryType);
             Controls.Add(pictureBoxLogo);
             Controls.Add(numVAT);
             Controls.Add(lblPostCode);
@@ -446,5 +468,8 @@
         private TextBox txtPostCode;
         private NumericUpDown numVAT;
         private PictureBox pictureBoxLogo;
+        private TextBox txtPackageType;
+        private ComboBox cmbDeliveryType;
+        private Label label2;
     }
 }
