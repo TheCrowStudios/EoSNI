@@ -10,6 +10,7 @@
 
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginForm));
             txtUsername = new TextBox();
             txtPassword = new TextBox();
             btnLogin = new Button();
@@ -76,17 +77,19 @@
             // 
             // btnHelp
             // 
-            btnHelp.Location = new Point(150, 278);
+            btnHelp.FlatAppearance.BorderSize = 0;
+            btnHelp.FlatStyle = FlatStyle.Flat;
+            btnHelp.Image = (Image)resources.GetObject("btnHelp.Image");
+            btnHelp.Location = new Point(256, 242);
             btnHelp.Name = "btnHelp";
-            btnHelp.Size = new Size(100, 30);
+            btnHelp.Size = new Size(37, 30);
             btnHelp.TabIndex = 18;
-            btnHelp.Text = "Help";
             btnHelp.UseVisualStyleBackColor = true;
             btnHelp.Click += btnHelp_Click;
             // 
             // btnQuit
             // 
-            btnQuit.Location = new Point(150, 314);
+            btnQuit.Location = new Point(291, 314);
             btnQuit.Name = "btnQuit";
             btnQuit.Size = new Size(97, 30);
             btnQuit.TabIndex = 19;
