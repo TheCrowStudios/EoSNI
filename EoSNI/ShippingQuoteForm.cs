@@ -20,7 +20,8 @@ namespace EoSNI
         public ShippingQuoteForm(string quote)
         {
             InitializeComponent();
-            lblQuote.Text = quote;
+            txtQuote.Text = quote;
+            txtQuote.ReadOnly = true;
         }
 
         private void btnClose_Click(object sender, EventArgs e)

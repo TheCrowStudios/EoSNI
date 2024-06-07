@@ -36,7 +36,7 @@ namespace EoSNI
                 $"VAT: {vat.ToString("C")} (%{numVAT.Value})\n\n",
                 $"TOTAL: {cost.ToString("C")}"};
 
-            int maxLength = 75;
+            int maxLength = 74;
 
             for (int i = 0; i < quoteStrings.Length; i++)
             {

@@ -28,19 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            lblQuote = new Label();
             btnClose = new Button();
+            txtQuote = new RichTextBox();
             SuspendLayout();
-            // 
-            // lblQuote
-            // 
-            lblQuote.AutoSize = true;
-            lblQuote.Font = new Font("Courier New", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblQuote.Location = new Point(12, 48);
-            lblQuote.Name = "lblQuote";
-            lblQuote.Size = new Size(71, 17);
-            lblQuote.TabIndex = 0;
-            lblQuote.Text = "<quote>";
             // 
             // btnClose
             // 
@@ -52,22 +42,31 @@
             btnClose.UseVisualStyleBackColor = true;
             btnClose.Click += btnClose_Click;
             // 
+            // txtQuote
+            // 
+            txtQuote.Font = new Font("Courier New", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtQuote.Location = new Point(12, 12);
+            txtQuote.Name = "txtQuote";
+            txtQuote.ReadOnly = true;
+            txtQuote.Size = new Size(678, 440);
+            txtQuote.TabIndex = 15;
+            txtQuote.Text = "";
+            txtQuote.WordWrap = false;
+            // 
             // ShippingQuoteForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(702, 500);
+            Controls.Add(txtQuote);
             Controls.Add(btnClose);
-            Controls.Add(lblQuote);
             Name = "ShippingQuoteForm";
             Text = "EoSNI - Shipping quote";
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
-
-        private Label lblQuote;
         private Button btnClose;
+        private RichTextBox txtQuote;
     }
 }
