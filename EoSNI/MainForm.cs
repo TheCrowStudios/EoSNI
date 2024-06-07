@@ -20,7 +20,20 @@ namespace EoSNI
         {
             double cost = CalculateCost();
             double vat = cost / 1.2 * (double)numVAT.Value / 100;
-            new ShippingQuoteForm($"Number of packages: {numNumberOfPackages.Value}\nTotal weight: {CalculateWeight()}kg\nBase price: {numBaseCost.Value.ToString("C")}\nCost/kg; {numCostPerKg.Value.ToString("C")}\nVAT: {vat.ToString("C")} (%{numVAT.Value})\n\nTOTAL: {cost.ToString("C")}").ShowDialog();
+            new ShippingQuoteForm($"Customer name: {txtCustomerName.Text}\n" +
+                $"Address: {txtAddress.Text}\n" +
+                $"Post code: {txtPostCode.Text}\n" +
+                $"Phone number: {txtPhoneNumber.Text}\n" +
+                $"Package type: {txtPackageType.Text}\n" +
+                $"Number of packages: {numNumberOfPackages.Value}\n" +
+                $"Total weight: {CalculateWeight()}kg\n" +
+                $"Dispatch date: {dtpDispatchDate.Value}\n" +
+                $"Target delivery date: {dtpTargetDeliveryDate.Value}\n" +
+                $"Base price: {numBaseCost.Value.ToString("C")}\n" +
+                $"Cost/kg: {numCostPerKg.Value.ToString("C")}\n" +
+                $"Total: {(cost - vat).ToString("C")}\n" +
+                $"VAT: {vat.ToString("C")} (%{numVAT.Value})\n\n" +
+                $"TOTAL: {cost.ToString("C")}").ShowDialog();
         }
 
         private void btnClear_Click(object sender, EventArgs e)
